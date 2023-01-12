@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "LevelDetails",
+"class": &"BarbarianLevelDetails",
+"language": &"GDScript",
+"path": "res://classes/barbarian/barbarian_level_details.gd"
+}, {
+"base": "Node",
+"class": &"DND5EOGLBaseClass",
+"language": &"GDScript",
+"path": "res://classes/base_class.gd"
+}, {
+"base": "Node",
+"class": &"LevelDetails",
+"language": &"GDScript",
+"path": "res://classes/level_details.gd"
+}]
+_global_script_class_icons={
+"BarbarianLevelDetails": "",
+"DND5EOGLBaseClass": "",
+"LevelDetails": ""
+}
+
+[application]
+
+config/name="plugin-dnd5-ogl"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
